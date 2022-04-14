@@ -12,13 +12,22 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const navbarBrand = document.body.querySelector(".navbar-brand");
+
         if (!navbarCollapsible) {
             return;
         }
+
+        if (!navbarBrand) {
+            return;
+        }
+
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
+            navbarBrand.style.display = "none";
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+            navbarBrand.style.display = "block";
         }
 
     };
