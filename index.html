@@ -16,6 +16,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style_price.css" rel="stylesheet" />
+        <link href="css/style_review.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -28,19 +30,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Чат-кот</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#start">Чат-кот</a></li>
                         <li class="nav-item"><a class="nav-link" href="#demo">О коте</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Возможности</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Еще больше</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Способности</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Приручение</a></li>
                         <li class="nav-item"><a class="nav-link" href="#price_table">Цены</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review">Отзывы</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Команда</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Связь</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead"> 
+        <header class="masthead" id = "start"> 
             <!-- <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="assets/mp4/bg.mp4" type="video/mp4" />
             </video>
@@ -54,13 +57,16 @@
         </header>
         <!-- Demo-->
         <section class="page-section" id = "demo">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Посмотри, как я работаю!</h2> <br>
+            </div>
             <div class="row text-center">
                 <div class="col-md-6">
                     <span class="fa-stack fa-4x">
-                        <img  width="150" height="150" src="assets/img/unsplash/cat.png" class="round" >
+                        <img  width="150" height="150" src="assets/img/unsplash/our_cat.jpg" class="round" > <br>
                     </span>
-                    <h4 class="my-3">Чат-кот</h4>
-                    <p class="text-muted">- чат-бот, который может помочь Вашей команде научиться работать в сложных корпоративных системах. Навикот интегрируетя с CRM и ERP Системами, с удовольствием научит пользователей работать с ними и займется технической поддержкой. А еще с котом можно поиграть.</p>
+                    <h4 class="my-3">Чат-кот</h4> 
+                    <p class="text-muted">- это чат-бот, который является браузерным расширением и легко интрегрируется в вашу CRM или ERP систему. Он может получать актуальную информацию со открытых страниц и помогать пользователям взаимодействовать с системой.</p>
                 </div>
                 <div class="col-md-6">
                     <img width="900" height="500" src="assets/mp4/gif.gif" class="rounded float-left">
@@ -68,10 +74,10 @@
             </div>
         </section>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section bg-light" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Чат-кот</h2>
+                    <h2 class="section-heading text-uppercase">Способности чат-кота</h2>
                     <h3 class="section-subheading text-muted">Корпоративный помощник в освоении сложных IT Систем.</h3>
                 </div>
                 <div class="row text-center">
@@ -79,22 +85,22 @@
                         <span class="fa-stack fa-4x">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/clever_cat.png"  /></div>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">1. Кот обучает пользователей</h4> <br>
+                        <p class="text-muted">Чат-кот может показать пользователю как правильно пользоваться сиситемой.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/question_cat.png"  /></div>
                         </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">2.	Быстро отвечает на вопросы</h4><br>
+                        <p class="text-muted">Он уже знает ответы на большинство вопросов и способен дать ответ в любом удобном виде.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/money.jpg"  /></div>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">3.	Сокращает затраты на техподдержку</h4>
+                        <p class="text-muted">Задать вопрос коту легче и быстрее, чем обращаться в техподдержку.</p>
 
                     </div>
                     <div class="row text-center">
@@ -102,29 +108,87 @@
                             <span class="fa-stack fa-4x">
                                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/work_cat.png"  /></div>
                             </span>
-                            <h4 class="my-3">E-Commerce</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <h4 class="my-3">4.	Работает 24/7 не покладая лап</h4>
+                            <p class="text-muted">Кот работает всегда, ведь он ни от кого не зависит.</p>
                         </div>
                         <div class="col-md-4">
                             <span class="fa-stack fa-4x">
                                 <div class="timeline-image"><img width="150" height="150" class="rounded-circle img-fluid" src="assets/img/unsplash/clock_cat.png"  /></div>
                             </span>
-                            <h4 class="my-3">Responsive Design</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <h4 class="my-3">5.	Аттестирует пользователей</h4> <br>
+                            <p class="text-muted">Кот может проверить, как работает пользователь.</p>
                         </div>
                         <div class="col-md-4">
                             <span class="fa-stack fa-4x">
                                 <div class="timeline-image"><img width="150" height="150" class="rounded-circle img-fluid" src="assets/img/unsplash/honey_cat.png"  /></div>
                             </span>
-                            <h4 class="my-3">Web Security</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                            <h4 class="my-3">6.	Кота можно гладить</h4> <br>
+                            <p class="text-muted">Котик мил и интересен. Он повысит лояльность к компании.</p>
     
                         </div>
                 </div>
             </div>
         </section>
+                <!-- About-->
+                <section class="page-section" id="about">
+                    <div class="container">
+                        <div class="text-center">
+                            <h2 class="section-heading text-uppercase">Как  завести кота</h2>
+                            <h3 class="section-subheading text-muted">Процесс настройки и работы.</h3>
+                        </div>
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/analsys_cat.png"  /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <!-- <h4>Кот-учитель</h4> -->
+                                        <h4 class="subheading">1.Провести анализ вашей системы</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Составить документацию, с которой сможет рабоать чат-кот</p></div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/play_cat.png" /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">                              
+                                        <h4 class="subheading">2. Внедрить минимальный функционал</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Определить приоритеты кота, и начать работать с ними</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/job_cat.png" alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">3. Зпустить чат-кота</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Проверить рабостоспособность котика, убедиться что он очень полезный, и собрать первые отзывы и пожелания</p></div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/big_cat.png" alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">Увеличить кота</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Доработка чат-кота для максимальной мощности и производительности!</p></div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>
+                                        <br />
+                                        Наслаждаться
+                                        <br />
+                                        котом!
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
         <!-- Price-->
-        <section id="price_table">
+        <section  class="page-section bg-light testimonials" id="price_table">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Цена чат-кота</h2> <br>
             </div>
@@ -195,7 +259,7 @@
             </a>
             </li>
             <li class="text-center">
-            <strong>КОТОФЕЙ
+            <strong>МИСТЕР КОТ
             </strong>
             <span class="big">40 <img  width="50" height="50" src="assets/img/unsplash/fish2.png" class="round" >
             </span>
@@ -231,170 +295,68 @@
             </div> 
             <!-- container -->
            </section> 
-           <!-- price_table -->
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
+        <!-- Review -->
+        <section class="page-section" id="review">
+            <div class="testimonials">
+                <div class="inner">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Отзывы</font></font></h1>
+                  <div class="border"></div>
+         <div class="row">
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="http://zornet.ru/_fr/83/9865573.jpg" alt="">
+                        <div class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Полное имя</font></font></div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
                         </div>
+          
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          Lorem Ipsum - просто фиктивный текст в полиграфии и вёрстке. </font><font style="vertical-align: inherit;">Lorem Ipsum был стандартным фиктивным текстом в индустрии с 1500-х годов,
+                        </font></font></p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="http://zornet.ru/_fr/83/7779370.jpg" alt="">
+                        <div class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Полное имя</font></font></div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
                         </div>
+          
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          Lorem Ipsum - просто фиктивный текст в полиграфии и вёрстке. </font><font style="vertical-align: inherit;">Lorem Ipsum был стандартным фиктивным текстом в индустрии с 1500-х годов,
+                        </font></font></p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img src="http://zornet.ru/_fr/83/9676618.jpg" alt="">
+                        <div class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Полное имя</font></font></div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
                         </div>
+          
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                          Lorem Ipsum - просто фиктивный текст в полиграфии и вёрстке. </font><font style="vertical-align: inherit;">Lorem Ipsum был стандартным фиктивным текстом в индустрии с 1500-х годов,
+                        </font></font></p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Свойства кота</h2>
-                    <h3 class="section-subheading text-muted">Чем чат-кот будет полезен Вашему бизнесу.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/clever_cat.png"  /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Кот-учитель</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Наш кот способен быстро обучить пользователей системе. Он не только расскажет, но также покажет и укажет, куда нажимать</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                  </div>
+        </section>>   
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
@@ -405,9 +367,9 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/marat.png" alt="..." />
+                            <h4>Marat</h4>
+                            <p class="text-muted">Programm Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -415,9 +377,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/marina.png" alt="..." />
                             <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <p class="text-muted">Team Leader</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -425,9 +387,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/alina.png" alt="..." />
+                            <h4>Alina</h4>
+                            <p class="text-muted">Programm Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -510,13 +472,13 @@
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Github"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-lg-4 text-lg-end">
+                    <!-- <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </footer>
