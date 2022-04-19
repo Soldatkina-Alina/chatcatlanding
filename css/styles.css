@@ -11809,4 +11809,7 @@ video { display: block; width: 100%; height: auto; }
   justify-content: center;
 }
 
-
+.rigth{
+  text-align: right;
+  left: 10000px;
+}
