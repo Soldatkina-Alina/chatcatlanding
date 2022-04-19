@@ -1,154 +1,45 @@
-#price_table ul {
-    display:table;
-    margin: 0 auto;
-    width:100%;
-    max-width:1100px;
-    padding: 0;
+.price-container {
+    display: flex;    
+    align-content: space-around;
+    margin: 4em 2em;
+}
+
+.price-card {
+    flex: 1;
+    padding: 2em;
+    margin: 0 .25em;
+    background-color: #eee;
+}
+
+    .price-card .picture {        
+        width: 1em;
+        height: 1em;
     }
-    #price_table li {
-    display:table-cell;
-    width:33.333%;
-    padding:43px 0 0;
-    transition: all 0.25s, color 0s !important;
-    position:relative;
-    z-index:0;
-    border:1px solid #BBB;
-    background-color: #fff;
+
+    .price-card:hover {
+        color: #fff;
+        background-color: #333;
+        transform: scale(1.05, 1.05);
     }
-    #price_table li:first-child {
-    position:relative;
-    right:-1px;
-    }
-    #price_table li:last-child {
-    position:relative;
-    left:-1px;
-    }
-    #price_table li:hover {
-    box-shadow: 0 13px 48px rgba(0, 0, 0, 0.2);
-    z-index:1;
-    color:#fff;
-    background: #333;
-    border-color: #333;
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    transform: scale(1.05);
-    }
-    #price_table li * {
-    transition: none !important;
-    text-decoration: none;
-    }
-    #price_table li:hover * {
-    color: #fff !important;
-    border-color:rgba(255, 255, 255, 0.27) !important;
-    }
-    #price_table li strong {
-    font-size:19px;
-    text-transform:uppercase;
-    color: #2F3740;
-    letter-spacing: 2.4px;
-    line-height:45px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
-    text-align: center;
-    }
-    #price_table ul .price_table-description {
-    display:block;
-    font-size: 16px;
-    line-height: 35px;
-    text-align: center;
-    color: #6C6C6C;
-    }
-    #price_table ul .price_table-pay{
-    display:block;
-    font-size: 14px;
-    padding-bottom: 35px;
-    text-align: center;
-    margin-top: -22px;
-    color: #6C6C6C;
-    }
-    #price_table .big {
-    font-size:84px;
-    letter-spacing:2px;
-    display:block;
-    font-weight:400;
-    text-align: center;
-    color: #6C6C6C;
-    }
-    #price_table .price_table-button {
-    font-size:19px;
-    text-transform:uppercase;
-    color:#2F3740;
-    text-decoration:none;
-    line-height:1;
-    padding:28px 0 24px;
-    border-top:1px solid #bbb;
-    width:100%;
-    margin-top:6px;
-    display:block;
-    text-align: center;
-    }
-    #price_table li:hover .price_table-button {
-    transition: none;
-    }
-    #price_table ul a:hover {
-    color:#E85700;
-    }
-    #price_table ul a.btn {
-    margin-top: 12px;
-    }
-    #price_table hr.full {
-    margin-top: 0px;
-    width: 80%;
-    }
-    ul.price-table-chart li:nth-child(1) i{
-    color: rgb(187, 84, 102);
-    }
-    ul.price-table-chart li:nth-child(3) i{
-    color: #39c;
-    }
-    ul.price-table-chart li:nth-child(2) {
-    box-shadow: 0 13px 48px rgba(0, 0, 0, 0.2) !important;
-    z-index: 2 !important;
-    color: #fff !important;
-    background: #333 !important;
-    border-color: #333 !important;
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    transform: scale(1.05);
-    }
-    ul.price-table-chart li:nth-child(2) * {
-    color: #fff !important;
-    }
-    ul.price-table-chart li:nth-child(2) .price_table-button {
-    border-color: rgba(255, 255, 255, 0.27) !important;
-    }
-    #price-table{
-    text-align: center;
-    }
-    @media (max-width: 966px){
-    #price_table .big {
-    font-size: 60px;
-    }
-    }
-    @media (max-width: 480px){
-    #price_table li {
-    display: block;
-    width: 100%;
-    }
-    .main_content{
-    padding: 0px;
-    }
-    }
-    .btn-sub{
-    width: 170px;
-    height: 50px;
-    border-radius: 30px;
+
+.price-value {
+    font-size: 32pt;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.price-support {
+    font-weight: bold;
+}
+
+.price-feature {
+    padding-bottom: .25em;
+}
+
+.btn-sub {    
+    font-size: 1.125em;
     color: white;
-    background-color: #39c;
-    padding-top: 15px;
-    margin-top: -15px;
-    border-color: #39c;
-    margin-bottom: 45px;
+    padding: 0.75em 2em;
+    margin: 1em 0;
     text-transform: uppercase;
-    }
+}
