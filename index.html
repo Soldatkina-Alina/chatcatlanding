@@ -15,6 +15,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/style_price.css" rel="stylesheet" />
+        <link href="css/style_review.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,229 +30,346 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Чат-кот</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Возможности</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Еще больше</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#start">Чат-кот</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#demo">О коте</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Способности</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Приручение</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#price_table">Цены</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review">Отзывы</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Команда</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Связь</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" id = "start"> 
+            <!-- <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="assets/mp4/bg.mp4" type="video/mp4" />
+            </video>
+            <div id="video-viewport"></div> -->
             <div class="container">
                 <div class="masthead-subheading">А вот и чат-кот!</div>
                 <div class="masthead-heading text-uppercase">Всегда рад вас видеть</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Хочу узнать больше</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Познакомиться</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#price_table">Приручить котика</a>
             </div>
         </header>
+        <!-- Demo-->
+        <section class="page-section" id = "demo">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Посмотри, как я работаю!</h2> <br>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <img  width="150" height="150" src="assets/img/unsplash/our_cat.jpg" class="round" > <br>
+                    </span>
+                    <h4 class="my-3">Чат-кот</h4> 
+                    <p class="text-muted">- это чат-бот, который является браузерным расширением и легко интрегрируется в вашу CRM или ERP систему. Он может получать актуальную информацию со открытых страниц и помогать пользователям взаимодействовать с системой.</p>
+                </div>
+                <div class="col-md-6">
+                    <img width="900" height="500" src="assets/mp4/gif.gif" class="rounded float-left">
+                </div>              
+            </div>
+        </section>
         <!-- Services-->
-        <section class="page-section showcase" id="services">
-            <div class="container-fluid p-0">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Чат-кот</h2>
-                    <h3 class="section-subheading text-muted">Чем чат-кот будет полезен Вашему бизнесу?</h3>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/unsplash/robert-stemler-unsplash_1.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Обучение</h2>
-                        <p class="lead mb-0">Обучит пользователей работе с вашей CRM-системой, никогда не оставит их в беде, всегда готов оперативно ответит на любой вопрос.</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/unsplash/alvan-nee-unsplash_1.jpg')"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Техподдержка</h2>
-                        <p class="lead mb-0">Сократит затраты на техподдержку и готов работать в любое время дня и ночи не покладая лапок.</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/unsplash/samsung-memory-unsplash_1.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Милота</h2>
-                        <p class="lead mb-0">Все любят котов, погладь кота!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Способности чат-кота</h2>
+                    <h3 class="section-subheading text-muted">Корпоративный помощник в освоении сложных IT Систем.</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/clever_cat.png"  /></div>
+                        </span>
+                        <h4 class="my-3">1. Кот обучает пользователей</h4> <br>
+                        <p class="text-muted">Чат-кот может показать пользователю как правильно пользоваться сиситемой.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/question_cat.png"  /></div>
+                        </span>
+                        <h4 class="my-3">2.	Быстро отвечает на вопросы</h4><br>
+                        <p class="text-muted">Он уже знает ответы на большинство вопросов и способен дать ответ в любом удобном виде.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/money.jpg"  /></div>
+                        </span>
+                        <h4 class="my-3">3.	Сокращает затраты на техподдержку</h4>
+                        <p class="text-muted">Задать вопрос коту легче и быстрее, чем обращаться в техподдержку.</p>
+
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/work_cat.png"  /></div>
+                            </span>
+                            <h4 class="my-3">4.	Работает 24/7 не покладая лап</h4>
+                            <p class="text-muted">Кот работает всегда, ведь он ни от кого не зависит.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <div class="timeline-image"><img width="150" height="150" class="rounded-circle img-fluid" src="assets/img/unsplash/clock_cat.png"  /></div>
+                            </span>
+                            <h4 class="my-3">5.	Аттестирует пользователей</h4> <br>
+                            <p class="text-muted">Кот может проверить, как работает пользователь.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <div class="timeline-image"><img width="150" height="150" class="rounded-circle img-fluid" src="assets/img/unsplash/honey_cat.png"  /></div>
+                            </span>
+                            <h4 class="my-3">6.	Кота можно гладить</h4> <br>
+                            <p class="text-muted">Котик мил и интересен. Он повысит лояльность к компании.</p>
+    
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- About-->
-        <section class="page-section" id="about">
+                <!-- About-->
+                <section class="page-section" id="about">
+                    <div class="container">
+                        <div class="text-center">
+                            <h2 class="section-heading text-uppercase">Как  завести кота</h2>
+                            <h3 class="section-subheading text-muted">Процесс настройки и работы.</h3>
+                        </div>
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/analsys_cat.png"  /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <!-- <h4>Кот-учитель</h4> -->
+                                        <h4 class="subheading">1.Провести анализ вашей системы</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Составить документацию, с которой сможет рабоать чат-кот</p></div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/play_cat.png" /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">                              
+                                        <h4 class="subheading">2. Внедрить минимальный функционал</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Определить приоритеты кота, и начать работать с ними</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/job_cat.png" alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">3. Запустить чат-кота</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Проверить рабостоспособность котика, убедиться что он очень полезный, и собрать первые отзывы и пожелания</p></div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/unsplash/big_cat.png" alt="..." /></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">Масштабировать кота</h4>
+                                    </div>
+                                    <div class="timeline-body"><p class="text-muted">Доработка чат-кота для максимальной мощности и производительности!</p></div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>
+                                        <br />
+                                        Наслаждаться
+                                        <br />
+                                        котом!
+                                    </h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        <!-- Price-->
+        <section  class="page-section bg-light testimonials" id="price_table">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Цена чат-кота</h2> <br>
+            </div>
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+            <div class="row">
+            <ul class="price-table-chart">
+            <li class="text-center">
+            <strong>КОТЁНОК
+            </strong>
+            <span class="big">10 <img  width="50" height="50" src="assets/img/unsplash/fish2.png" class="round" > 
+            </span>
+            <span class="price_table-pay">20ч техподдержки
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Первоначальная настройка чат-кота
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Консультации по последующей настройке
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Базовая настройка стиля
+            </span>
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Выгрузка истории обращений
+            </span>
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Отправка сотрудникам техподдержки сообщений о поступивших вопросах
+            </span>
+            <br>
+            <a class="btn btn-sub btn-primary" href="#" role="button">Приманить
+            </a>
+            </li>
+            <li class="text-center">
+            <strong>КОТ
+            </strong>
+            <span class="big">30 <img  width="50" height="50" src="assets/img/unsplash/fish2.png" class="round" > 
+            </span>
+            <span class="price_table-pay">60ч техподдержки
+            </span>
+            <hr class="full">
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Настройка чат-кота
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Консультации по последующей настройке
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Обучение сотрудников
+            </span>
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Отправка сотрудникам техподдержки сообщений о поступивших вопросах
+            </span>
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Автоматическое формирование статистики использования
+            </span>
+            <br>
+            <a class="btn btn-sub btn-primary" href="#" role="button">Прикормить
+            </a>
+            </li>
+            <li class="text-center">
+            <strong>МИСТЕР КОТ
+            </strong>
+            <span class="big">40 <img  width="50" height="50" src="assets/img/unsplash/fish2.png" class="round" >
+            </span>
+            <span class="price_table-pay">Неограниченное время техподдержки
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Персональная настройка чат-кота
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Обновления перечня вопросов
+            </span> 
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Обучение сотрудников
+            </span>
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Автоматическое формирование статистики использования
+            </span>
+            <span class="price_table-description">
+            <i class="fa fa-check">
+            </i> Отправка сотрудникам техподдержки сообщений о поступивших вопросах
+            </span>
+            <br>
+            <a class="btn btn-sub btn-primary" href="#" role="button">Приютить
+            </a>
+            </li>
+            </ul>
+            </div> 
+            <!-- row main_content -->
+            </div> 
+            <!-- container -->
+           </section> 
+        <!-- Review -->
+        <section class="page-section" id="review">
+            <div class="testimonials">
+                <div class="inner">
+                  <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Отзывы</font></font></h1>
+                  <div class="border"></div>
+         <div class="row">
+                    <div class="col">
+                      <div class="testimonial">
+                        <img class="rounded-circle img-fluid" src="assets/img/unsplash/review_1.png"/>
+                        <div class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Эльвира Котикова</font></font></div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+          
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Благодарим компанию «Навикон» за проявленный профессионализм и внимание к деталям проекта. Даже на старте внедрения Чат-кота наши сотрудники стали работать быстрее, а количество заявок в техническую поддержку снизилось.
+                        </font></font></p>
+                      </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img class="rounded-circle img-fluid" src="assets/img/unsplash/review_2.png"/>
+                        <div class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Сергей Тигров,</font></font></div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+          
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Функциональность «Коробочной» версии чат-бота полностью закрыла наши потребности. Хотим отдельно отметить простоту администрирования бота и понятность интерфейса в части работы пользователей. Благодаря чат-боту нам удалось существенно снизить затраты на обучение и избежать отрыва от работы более двухсот пользователей. 
+                        </font></font></p>
+                      </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="testimonial">
+                        <img class="rounded-circle img-fluid" src="assets/img/unsplash/review_3.png"/>
+                        <div class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Даниил Львов</font></font></div>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+          
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            Мы приобрели CRM Dynamics в качестве платформы для автоматизации работы контакт-центра. Для обучения и аттестации сотрудников также приобрели чат-кота. Кот справился со своей задачей, полностью заменив «живое» обучение и на 40% сократив время на проверку знаний сотрудников. 
+                        </font></font></p>
+                      </div>
+                    </div>
+                  </div>
+        </section>>   
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Заводчики котов</h2>
+                    <h3 class="section-subheading text-muted">Наша потрясающая команда.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/marat.png" alt="..." />
+                            <h4>Marat</h4>
+                            <p class="text-muted">Software Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -257,9 +377,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/marina.png" alt="..." />
                             <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <p class="text-muted">Team Leader</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
@@ -267,45 +387,26 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/alina.png" alt="..." />
+                            <h4>Alina</h4>
+                            <p class="text-muted">Software Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
+                </div> -->
             </div>
         </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Понравился кот? Свяжитесь с нами</h2>
+                    <h3 class="section-subheading text-muted">Наш кот станет вашим лучшим другом.</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -371,13 +472,13 @@
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Github"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-lg-4 text-lg-end">
+                    <!-- <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                         <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </footer>
