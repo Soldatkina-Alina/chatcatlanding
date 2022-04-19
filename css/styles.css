@@ -11800,18 +11800,18 @@ video { display: block; width: 100%; height: auto; }
   box-shadow: 0 0 7px #666; /* Параметры тени */
  }
 
- .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rigth{
-  text-align: right;
-  left: 10000px;
+.button {
+  color: #fff;
+  background-color: #df2701;
+  border-color: #df2701;
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  padding: 8px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase !important;
 }
 
 .services-picture {
